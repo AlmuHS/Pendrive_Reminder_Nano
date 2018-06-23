@@ -15,14 +15,3 @@ msgstr ""
 msgid "Shutdown lock enabled. "
 msgstr "Het uitzetten van de computer wordt geblokeerd"
 
-#: aux_scripts/usbdevinserted.sh:58
-msgid "The shutdown will be unlocked when pendrive is disconnected"
-msgstr "De compputer kan pas uitgezet worden nadat de pendrive is verwijderd"
-
-#: aux_scripts/usbdevgone.sh:68
-msgid "Shutdown lock disabled. "
-msgstr "blokade op uitzetten is opgeheven"
-
-#: aux_scripts/usbdevgone.sh:69
-msgid "Now you can shutdown your computer"
-msgstr "de computer kan nu weer uitgezet worden"
