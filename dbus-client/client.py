@@ -17,7 +17,7 @@ bus = dbus.SystemBus(mainloop=dbus_loop)
 loop = GLib.MainLoop()
 
 #Get username
-username = str(sys.argv[1])
+#username = str(sys.argv[1])
 
 #Install locale support
 try:
