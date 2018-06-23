@@ -7,7 +7,7 @@ Based in [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder)
 
 This is a reimplementation of [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder), with a simpler structure.
 
-In this version, the UDev events are supplied by a simple UDisks query.
+In this version, the UDev events are replaced by a simple UDisks query.
 As this form, we can check the pendrive existence easily that the original implementation, and detect more problematic situation than before
 
 ## Disadvantages
