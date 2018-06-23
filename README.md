@@ -60,3 +60,13 @@ Also, can be necessary to install the dependencies.
   
       sudo apt install libnotify-bin policykit-1
 
+
+### Installation locations
+
+The scripts and the dbus client will be copied in `/usr/bin/pendrive-reminder/`
+
+The polkit rule will be copied in `/usr/share/polkit-1/rules.d/`
+
+The locale files will be copied in `/usr/share/locale`, in the directories from each language.
+
+The desktop launcher will be copied in `/etc/xdg/autostart`
