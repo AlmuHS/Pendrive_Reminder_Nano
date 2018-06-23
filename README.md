@@ -33,3 +33,30 @@ As this form, we can check the pendrive existence easily that the original imple
     - pygobject
   - gettext
 
+## Installation
+
+To install this tool, simply download this repository and execute `install.sh` as root.
+
+Also, can be necessary to install the dependencies.
+
+- **Fedora**:
+
+      sudo dnf install dbus-python pygobject3 python3-gobject at libnotify
+
+- **Arch Linux**:
+
+      sudo pacman -S python-dbus python-gobject at libnotify
+
+- **Gentoo**:
+
+      sudo emerge -a dev-python/dbus-python dev-python/pygobject sys-process/at x11-libs/libnotify
+
+- **Debian**:
+  Debian uses polkit 0.105 as default, but It's possible to install polkit 0.114 from experimental repository, following this steps 
+  
+  https://github.com/AlmuHS/Pendrive_Reminder/wiki/Instalar-Polkit-0.114-en-Debian
+  
+  To install another dependencies, you can to use:
+  
+      sudo apt install libnotify-bin policykit-1
+
