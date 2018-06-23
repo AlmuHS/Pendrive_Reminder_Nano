@@ -24,7 +24,7 @@ As this form, we can check the pendrive existence easily that the original imple
 ## Requirements
 
   - GNU/Linux
-  - polkit
+  - polkit >= 0.106
   - udisks2
   - libnotify
   - dbus
