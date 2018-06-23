@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=PReminder DBus Client
+Comment=DBus notify client, for Pendrive Reminder
+Path=/usr/bin/pendrive-reminder/dbus-client/
+Exec=/usr/bin/pendrive-reminder/dbus-client/client.py
+Terminal=false
+Type=Application
+
+
+Name[es_ES]=preminder.desktop

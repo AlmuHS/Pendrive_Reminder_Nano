@@ -14,25 +14,10 @@ else
 	#Remove locale files
 	find /usr/share/locale/ -name "preminder*" -delete
 
-	#If polkit version is >= 0.106, remove rules and policy file	
-	if test $(pkaction --version | cut -d " " -f 3 | cut -d "." -f 2) -ge 106
-	then
-		rm /usr/share/polkit-1/rules.d/10-inhibit-shutdown.rules
-		
-		#if there are any dbus client active, kill them
-		if test -f /tmp/pid_dbus
-		then
-			while read pid
-			do
-				kill -9 $pid
-			done < /tmp/pid_dbus
+	#Remove polkit rules and policy file	
+	rm /usr/share/polkit-1/rules.d/10-inhibit-shutdown.rules
 
-			#Remove temporary file
-			rm /tmp/pid_dbus
-		fi
-
-	if test -f /tmp/usbdevinfo
-	then
-		rm /tmp/usbdevinfo
-	fi
+	#Remove xdg autostart entrt
+	rm /etc/xdg/autostart/preminder.desktop
+	
 fi
