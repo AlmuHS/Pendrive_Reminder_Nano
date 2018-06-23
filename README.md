@@ -21,4 +21,15 @@ As this form, we can check the pendrive existence easily that the original imple
      - Now we can detect the pendrive connection made before system start.
      - Don't matter when and how the desktop session is started: the dbus client will be always available 
 
+## Requirements
+
+  - GNU/Linux
+  - polkit
+  - udisks2
+  - libnotify
+  - dbus
+  - Python 3
+    - python-dbus
+    - pygobject
+  - gettext
 
