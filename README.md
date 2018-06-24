@@ -14,6 +14,7 @@ As this form, we can check the pendrive existence easily that the original imple
 
   -  This version don't supports polkit < 0.106
   -  It's a little less efficient than previous version
+  -  The notification only is shown when user press shutdown button. There aren't notification to advice when a device has been connected or disconnected
 
 ## Advantages
 	
