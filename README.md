@@ -12,9 +12,9 @@ As this form, we can check the pendrive existence easily that the original imple
 
 ## Disadvantages
 
-  -  This version don't supports polkit < 0.106
-  -  It's a little less efficient than previous version
-  -  The notification only is shown when user press shutdown button. There aren't notification to advice when a device has been connected or disconnected
+  -  This version doesn't support polkit < 0.106
+  -  Efficienty is lesser than previous version
+  -  The notification can be only shown when user press shutdown button. No advice notification when a device has been connected or disconnected
 
 ## Advantages
 	
