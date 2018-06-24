@@ -20,7 +20,7 @@ This way It can check the pendrive existence more easily than the original imple
 ## Advantages
 	
   - Supports more usecase than previous version
-     - Now It's can detect the pendrive connection made before system start.
+     - Now It detects the pendrive connection made before system start.
      - It's doesn't matter when and how many desktop sessions is started: the dbus client will be always available 
 
 ## Requirements
