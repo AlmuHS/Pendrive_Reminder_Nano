@@ -7,7 +7,7 @@ polkit.addRule(function(action, subject) {
 	{
 	
 		try{	
-			polkit.spawn(["/usr/bin/pendrive-reminder/aux_scripts/check_pendrive.sh", subject.user]);        
+			polkit.spawn(["/usr/bin/pendrive-reminder/aux_scripts/check_pendrive.py", subject.user]);        
 			return polkit.Result.YES;
 
 		}catch(error){

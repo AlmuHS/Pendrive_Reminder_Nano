@@ -16,5 +16,5 @@ def get_usb():
     return 0
 
 
-print(get_usb())
-sys.exit(get_usb())
+exists_pendrive = get_usb()
+sys.exit(exists_pendrive)
