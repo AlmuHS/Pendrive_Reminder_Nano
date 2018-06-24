@@ -8,7 +8,7 @@ Based in [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder)
 This is a reimplementation of [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder), with a simpler structure.
 
 In this version, the UDev rules are replaced by a simple UDisks query.
-This way we can check the pendrive existence more easily than the original implementation, and detect more problematic situation than before
+This way It can check the pendrive existence more easily than the original implementation, and detect more key cases than this.
 
 ## Disadvantages
 
