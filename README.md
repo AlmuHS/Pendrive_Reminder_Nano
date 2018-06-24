@@ -1,5 +1,5 @@
 # Pendrive_Reminder_Nano
-Little tool to avoid accidentally pendrive forgets, for GNU/Linux
+Little tool to avoid accidentally forgetting connected pendrives
 
 Based in [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder)
 
@@ -55,7 +55,7 @@ Also, It can be necessary to install some dependencies.
 
 - **Debian**:
 
-  Debian install polkit 0.105 by default, so this program will not works there.
+  Debian install polkit 0.105 by default, so this program will not work there.
   However, It's possible to install polkit 0.114 from experimental repository, following these steps:
   
   https://github.com/AlmuHS/Pendrive_Reminder/wiki/Instalar-Polkit-0.114-en-Debian
