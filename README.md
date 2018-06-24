@@ -14,7 +14,8 @@ Thus we can check the pendrive existence easily that the original implementation
 
   -  This version doesn't support polkit < 0.106
   -  Less efficient than previous version
-  -  The notification can be only shown when user press shutdown button. No advice notification when a device has been connected or disconnected
+  -  There is no notification to advice when a device has been connected or disconnected.
+
 
 ## Advantages
 	
@@ -36,9 +37,9 @@ Thus we can check the pendrive existence easily that the original implementation
 
 ## Installation
 
-To install this tool, simply download this repository and execute `install.sh` as root.
+To install this tool, let's simply download this repository and execute `install.sh` as root.
 
-Also, can be necessary to install the dependencies.
+Also, it can be necessary to install some dependencies.
 
 - **Fedora**:
 
@@ -74,11 +75,12 @@ The desktop launcher will be copied in `/etc/xdg/autostart`
 
 ## Uninstallation
 
-To uninstall it simply execute `uninstaller.sh` as root.
+To uninstall it, let’s simply execute uninstaller.sh as root.
+
 The uninstaller will delete the app directory, the polkit rule, and the locale files.
 
 This uninstall can be done while the program is running, even if there are any lock enabled.
-The uninstaller also will break all lock setted in the system, allowing the shutdown correctly.
 
-But this installer will not remove the dependency packages previously installed.
+The uninstaller also will break all lock that has been set in the system, allowing a correctly shutdown.
 
+This uninstaller will not remove the dependency packages previously installed.
