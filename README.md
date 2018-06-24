@@ -71,3 +71,14 @@ The polkit rule will be copied in `/usr/share/polkit-1/rules.d/`
 The locale files will be copied in `/usr/share/locale`, in the directories from each language.
 
 The desktop launcher will be copied in `/etc/xdg/autostart`
+
+## Uninstallation
+
+To uninstall it simply execute `uninstaller.sh` as root.
+The uninstaller will delete the app directory, the polkit rule, and the locale files.
+
+This uninstall can be done while the program is running, even if there are any lock enabled.
+The uninstaller also will break all lock setted in the system, allowing the shutdown correctly.
+
+But this installer will not remove the dependency packages previously installed.
+
