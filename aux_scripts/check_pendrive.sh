@@ -1,12 +1,10 @@
 #!/bin/bash
 
 #Script linked to 10-inhibit-shutdown polkit rule
-#This script check if watchdog file exists in the system
-#If don't exists, return 0 (correct)
-#else return 1(error)
+#This script call check_pendrive.py script, which execute a udisks query to check if there are any pendrive in the system.
+
+#The script returns the output value gets from check_pendrive.py
 
 
-exists=$(/usr/bin/pendrive-reminder/aux_scripts/check_pendrive.py)
-
-exit $exists
+exit $(/usr/bin/pendrive-reminder/aux_scripts/check_pendrive.py)
 
