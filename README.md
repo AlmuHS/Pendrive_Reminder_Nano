@@ -8,12 +8,12 @@ Based in [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder)
 This is a reimplementation of [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder), with a simpler structure.
 
 In this version, the UDev rules are replaced by a simple UDisks query.
-As this form, we can check the pendrive existence easily that the original implementation, and detect more problematic situation than before
+Thus we can check the pendrive existence easily that the original implementation, and detect more problematic situation than before
 
 ## Disadvantages
 
   -  This version doesn't support polkit < 0.106
-  -  Efficienty is lesser than previous version
+  -  Less efficient than previous version
   -  The notification can be only shown when user press shutdown button. No advice notification when a device has been connected or disconnected
 
 ## Advantages
