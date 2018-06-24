@@ -42,15 +42,15 @@ Also, can be necessary to install the dependencies.
 
 - **Fedora**:
 
-      sudo dnf install dbus-python pygobject3 python3-gobject at libnotify
+      sudo dnf install dbus-python pygobject3 python3-gobject libnotify
 
 - **Arch Linux**:
 
-      sudo pacman -S python-dbus python-gobject at libnotify
+      sudo pacman -S python-dbus python-gobject libnotify
 
 - **Gentoo**:
 
-      sudo emerge -a dev-python/dbus-python dev-python/pygobject sys-process/at x11-libs/libnotify
+      sudo emerge -a dev-python/dbus-python dev-python/pygobject x11-libs/libnotify
 
 - **Debian**:
   Debian offers polkit 0.105 as default, but It's possible to install polkit 0.114 from experimental repository, following this steps 
