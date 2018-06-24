@@ -21,7 +21,7 @@ This way It can check the pendrive existence more easily than the original imple
 	
   - Supports more usecase than previous version
      - Now It detects the pendrive connection made before system start.
-     - It's doesn't matter when and how many desktop sessions is started: the dbus client will be always available 
+     - It's doesn't matter when and how many desktop sessions are started: the dbus client will be always available 
 
 ## Requirements
 
