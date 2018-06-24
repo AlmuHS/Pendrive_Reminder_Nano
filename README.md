@@ -52,7 +52,7 @@ Also, can be necessary to install the dependencies.
       sudo emerge -a dev-python/dbus-python dev-python/pygobject sys-process/at x11-libs/libnotify
 
 - **Debian**:
-  Debian uses polkit 0.105 as default, but It's possible to install polkit 0.114 from experimental repository, following this steps 
+  Debian offers polkit 0.105 as default, but It's possible to install polkit 0.114 from experimental repository, following this steps 
   
   https://github.com/AlmuHS/Pendrive_Reminder/wiki/Instalar-Polkit-0.114-en-Debian
   
