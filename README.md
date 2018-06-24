@@ -59,7 +59,7 @@ Also, can be necessary to install the dependencies.
   
   To install another dependencies, you can to use:
   
-      sudo apt install libnotify-bin policykit-1
+      sudo apt install libnotify-bin policykit-1 python-gobject python3-dbus
 
 
 ### Installation locations
