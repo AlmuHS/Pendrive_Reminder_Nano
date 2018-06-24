@@ -8,11 +8,11 @@ Based in [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder)
 This is a reimplementation of [Pendrive Reminder](https://github.com/AlmuHS/Pendrive_Reminder), with a simpler structure.
 
 In this version, the UDev rules are replaced by a simple UDisks query.
-This way we can check the pendrive existence easier than the original implementation, and detect more problematic situation than before
+This way we can check the pendrive existence more easily than the original implementation, and detect more problematic situation than before
 
 ## Disadvantages
 
-  -  This version doesn't support polkit < 0.106
+  -  This version does not support polkit < 0.106
   -  Less efficient than previous version
   -  There is no notification to advice when a device has been connected or disconnected.
 
@@ -20,8 +20,8 @@ This way we can check the pendrive existence easier than the original implementa
 ## Advantages
 	
   - Supports more usecase than previous version
-     - Now we can detect the pendrive connection made before system start.
-     - Don't matter when and how the desktop session is started: the dbus client will be always available 
+     - Now It's can detect the pendrive connection made before system start.
+     - It's doesn't matter when and how many desktop sessions is started: the dbus client will be always available 
 
 ## Requirements
 
@@ -37,9 +37,9 @@ This way we can check the pendrive existence easier than the original implementa
 
 ## Installation
 
-To install this tool, let's simply download this repository and execute `install.sh` as root.
+To install this tool, simply download this repository and execute `install.sh` as root.
 
-Also, it can be necessary to install some dependencies.
+Also, It can be necessary to install some dependencies.
 
 - **Fedora**:
 
@@ -54,11 +54,13 @@ Also, it can be necessary to install some dependencies.
       sudo emerge -a dev-python/dbus-python dev-python/pygobject x11-libs/libnotify
 
 - **Debian**:
-  Debian offers polkit 0.105 as default, but It's possible to install polkit 0.114 from experimental repository, following these steps 
+
+  Debian offers polkit 0.105 as default version, so this program will not works there.
+  However, It's possible to install polkit 0.114 from experimental repository, following these steps:
   
   https://github.com/AlmuHS/Pendrive_Reminder/wiki/Instalar-Polkit-0.114-en-Debian
   
-  To install another dependencies, you can to use:
+  After install polkit 0.114, you need to install the other dependencies:
   
       sudo apt install libnotify-bin policykit-1 python-gobject python3-dbus
 
@@ -75,12 +77,12 @@ The desktop launcher will be copied in `/etc/xdg/autostart`
 
 ## Uninstallation
 
-To uninstall it, let’s simply execute uninstaller.sh as root.
+To uninstall it, simply execute `uninstaller.sh` as root.
 
 The uninstaller will delete the app directory, the polkit rule, and the locale files.
 
-This uninstall can be done while the program is running, even if there are any lock enabled.
+The program can be uninstalled while it is running, even if there is any lock enabled.
 
-The uninstaller also will break all locks that have been set in the system, allowing a correctly shutdown.
+The uninstaller will also break all locks that have been set in the system, allowing a correctly shutdown.
 
 This uninstaller will not remove the dependency packages previously installed.
