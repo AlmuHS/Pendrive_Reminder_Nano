@@ -9,12 +9,17 @@ def get_usb():
     ud_manager_obj = bus.get_object('org.freedesktop.UDisks2', '/org/freedesktop/UDisks2')
     om = dbus.Interface(ud_manager_obj, 'org.freedesktop.DBus.ObjectManager')
 
+    counter = 0;
+
     for k,v in om.GetManagedObjects().items():
-        drive_info = v.get('org.freedesktop.UDisks2.Block', {})
-        if drive_info.get('IdUsage') == "filesystem" and not drive_info.get('HintSystem') and not drive_info.get('ReadOnly'):
+        block_info = v.get('org.freedesktop.UDisks2.Block', {})
+        drive_info = v.get('org.freedesktop.UDisks2.Drive', {})
+
+        if drive_info.get('ConnectionBus') == "usb" and drive_info.get('Removable') and drive_info.get('Size') > 0:
             return 1
     return 0
 
 
 exists_pendrive = get_usb()
+print(exists_pendrive)
 sys.exit(exists_pendrive)
