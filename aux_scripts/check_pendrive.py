@@ -21,5 +21,4 @@ def get_usb():
 
 
 exists_pendrive = get_usb()
-print(exists_pendrive)
 sys.exit(exists_pendrive)
