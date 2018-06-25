@@ -12,7 +12,6 @@ def get_usb():
     counter = 0;
 
     for k,v in om.GetManagedObjects().items():
-        block_info = v.get('org.freedesktop.UDisks2.Block', {})
         drive_info = v.get('org.freedesktop.UDisks2.Drive', {})
 
         if drive_info.get('ConnectionBus') == "usb" and drive_info.get('Removable') and drive_info.get('Size') > 0:
