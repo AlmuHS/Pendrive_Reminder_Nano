@@ -71,7 +71,7 @@ Also, It can be necessary to install some dependencies.
 
 - **Debian**:
 
-  Debian install polkit 0.105 by default, so this program will not work there.
+  Debian installs polkit 0.105 by default, so this program will not work there.
   However, It's possible to install polkit 0.114 from experimental repository, following these steps:
   
   https://github.com/AlmuHS/Pendrive_Reminder/wiki/Instalar-Polkit-0.114-en-Debian
