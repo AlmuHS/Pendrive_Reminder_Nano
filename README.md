@@ -45,7 +45,7 @@ This way, the polkit rule calls [`check_pendrive.py`](https://github.com/AlmuHS/
 
 If there are any pendrives connected to the system, [`check_pendrive.py`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/aux_scripts/check_pendrive.py), the polkit rule calls [`send_notify.sh`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/aux_scripts/send_notify.sh) to send the signal to the dbus client, which shows the notification to the user who pressed the shutdown button.
 
-To launch the dbus client, we put this in xdg autostart process list, by creating a new desktop entry ([`preminder.desktop`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/xdg-launcher/preminder.desktop) and putting this file in in `/etc/xdg/autostart`
+To launch the dbus client, we put this in xdg autostart process list, by creating a new desktop entry ([`preminder.desktop`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/xdg-launcher/preminder.desktop)) and putting this file in in `/etc/xdg/autostart`
 This way, the dbus client will be launched with each new graphical user session. 
 
 ## Installation
