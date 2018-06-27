@@ -39,16 +39,13 @@ This way It can check the pendrive existence more easily than the original imple
 
 The implementation is pretty similar to the original [Pendrive Reminder implementation](https://github.com/AlmuHS/Pendrive_Reminder#implementaci%C3%B3n), replacing the udev rules for a simple udisks query.
 
-This way, the polkit rule calls [`check_pendrive.py`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/aux_scripts/check_pendrive.py) which, instead of checking the existence of a watchdog file, it executes an udisks query to check if there are any usb block device (aka pendrive) registered in the system.
+This way, the polkit rule calls [`check_pendrive.py`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/aux_scripts/check_pendrive.py) which, instead of checking the existence of a watchdog file, it executes an udisks query to check if there are any usb block devices (aka pendrive) registered in the system.
 
 [`check_pendrive.py`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/aux_scripts/check_pendrive.py) will return 0 (correct) if there aren't any pendrives connected, or 1 (error) if there are any pendrives connected.
 
 If there are any pendrives connected to the system, [`check_pendrive.py`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/aux_scripts/check_pendrive.py), the polkit rule calls [`send_notify.sh`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/aux_scripts/send_notify.sh) to send the signal to the dbus client, which shows the notification to the user who pressed the shutdown button.
 
-To launch the dbus client, we put this in xdg autostart process list. 
-
-To do this, we have created a new desktop entry ([`preminder.desktop`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/xdg-launcher/preminder.desktop)) to execute dbus client from graphical server, and we've put this file in `/etc/xdg/autostart`
-
+To launch the dbus client, we put this in xdg autostart process list, by creating a new desktop entry ([`preminder.desktop`](https://github.com/AlmuHS/Pendrive_Reminder_Nano/blob/master/xdg-launcher/preminder.desktop) and putting this file in in `/etc/xdg/autostart`
 This way, the dbus client will be launched with each new graphical user session. 
 
 ## Installation
